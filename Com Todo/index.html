@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic</title>
+    <link rel="stylesheet" href="style.css " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Todo App</h1>
+
+    <div class="container">
+      <div class="left">
+        <form id="form">
+          <label for="">Write the post here</label>
+          <br /><br />
+          <textarea id="input" cols="30" rows="10"></textarea>
+          <div id="msg"></div>
+          <br /><br />
+          <button type="submit">Post</button>
+        </form>
+      </div>
+
+      <div class="right">
+        <div id="post">
+          <h3>Your Posts here</h3>
+          <!---->
+          <div>
+            <p>hello</p>
+            <span class="option">
+              <i
+                onClick="editPost(this)"
+                class="fa-regular fa-pen-to-square"
+              ></i>
+              <!--this is for edit icons from fontawesome-->
+              <i
+                onClick="deletePost(this)"
+                class="fa-sharp fa-solid fa-trash"
+              ></i>
+              <!--this is for delete icons from fontawesome-->
+            </span>
+          </div>
+
+          <div>
+            <p>World</p>
+            <span class="option">
+              <i
+                onClick="editPost(this)"
+                class="fa-regular fa-pen-to-square"
+              ></i>
+              <!--this is for edit icons from fontawesome-->
+              <i
+                onClick="deletePost(this)"
+                class="fa-sharp fa-solid fa-trash"
+              ></i>
+              <!--this is for delete icons from fontawesome-->
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
